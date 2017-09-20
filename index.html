@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- normalize too -->
+		<!-- and use normal folders and paths -->
+		<!-- and are dimentions of cards are allright? -->
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<header class="main-header  container">
+		 <h1 class="main-header__title">Layout designer portfolio</h1>
+		 <span class="sub-title">simple.working</span>
+		</header>
+		<main>
+			<section class="cards  container">
+				<!-- <h2 class="section-title  visually-hidden">Mark-up examples</h2> -->
+				 <!--i guess i can delete section-title-->
+			<!-- <div class="example__wrapper"> -->
+				<h2 class="visually-hidden">Mark-up examples</h2>
+				<article class="card__container">
+					<a target="_blank" href="https://t-veyden.github.io/39616-device/">
+						<img class="card__img"
+						src="device-index.jpg" width="300" height="350" alt="">
+					</a>
+		 			<div class="card__type">
+		 				<a target="_blank" href="https://t-veyden.github.io/39616-device/">
+							<b>Device</b>
+						</a>
+		 			</div>
+					<a class="repo-link" href="">github repository</a>
+					<div class="hidden-card">
+						<button class="btn" type="button">
+							<span class="visually-hidden">More information</span>
+						</button>
+						<div class="hidden-card__info  hide">
+							<b class="hidden-card__title">About this project:</b>
+							<ul class="hidden-card__description">
+								<li><b>Design by:</b>
+									<a class="hidden-card__link" target="_blank" href="https://htmlacademy.ru/" >HTML Academy</a>
+								</li>
+								<li><b>Static</b>, 2 pages</li>
+								<li><b>HTML5, CSS3, JS</b></li>
+							</ul>
+						</div>
+					</div>
+		 		</article>
+
+		 		<article class="card__container">
+					<a target="_blank" href="https://t-veyden.github.io/sedona/index.html">
+						<img class="card__img"
+						src="sedona-index.jpg" width="300" height="350" alt="">
+					</a>
+		 			<div class="card__type">
+						<a target="_blank" href="https://t-veyden.github.io/sedona/index.html">
+							<b>Sedona</b>
+						</a>
+		 			</div>
+					<a class="repo-link" href="">github repository</a>
+					<div class="hidden-card">
+						<button class="btn" type="button">
+							<span class="visually-hidden">More information</span>
+						</button>
+						<div class="hidden-card__info  hide">
+							<b class="hidden-card__title">About this project:</b>
+							<ul class="hidden-card__description">
+								<li><b>Design by:</b>
+									<a class="hidden-card__link" target="_blank" href="https://htmlacademy.ru/">HTML Academy</a>
+								</li>
+								<li><b>Adaptive:</b> mobile, tablet, desktop</li>
+								<li><b>HTML5, Sass, JS, Gulp</b></li>
+								<li><b>BEM</b></li>
+							</ul>
+						</div>
+					</div>
+		 		</article>
+
+		 		<article class="card__container">
+					<img class="card__img"
+					src="bike-index.jpg" width="300" height="350" alt="">
+		 			<div class="card__type">
+						<a href=""><b>Bikeshop</b></a>
+		 			</div>
+					<a class="repo-link" href="">github repository</a>
+					<div class="hidden-card">
+						<button class="btn" type="button">
+							<span class="visually-hidden">More information</span>
+						</button>
+						<div class="hidden-card__info  hide">
+							<b class="hidden-card__title">About this project:</b>
+							<ul class="hidden-card__description">
+								<!-- <li><b>Design by:</b>
+									<a class="hidden-card__link" href="#">HTML Academy</a>
+								</li> -->
+								<li><b>Static</b>, landing page</li>
+								<li><b>HTML5, Sass, JS</b></li>
+								<li><b>BEM</b></li>
+							</ul>
+						</div>
+					</div>
+		 		</article>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<section class="container">
+				<h2 class="visually-hidden">Contact information</h2>
+				<div class="footer-info">
+					<address class="footer-info__mail">
+					You can contact me via
+					<a href="mailto:luftaverse@gmail.com">luftaverse@gmail.com</a>
+					</address>
+					<span class="footer-info__copyright">&copy; One Man Band</span>
+				</div>
+			</section>
+		</footer>
+		<script>
+		function animateCard() {
+			var buttons = document.querySelectorAll('.btn');
+			var hiddenCards = document.querySelectorAll('.hidden-card__info');
+
+			for (let i = 0; i < buttons.length; i++) {
+				buttons[i].addEventListener('click', function(evt) {
+					evt.target.classList.toggle('animate');
+					hiddenCards[i].classList.toggle('hide');
+				});
+			}
+		}
+		animateCard();
+		</script>
+	</body>
+</html>
