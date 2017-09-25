@@ -2,14 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<!-- normalize too -->
-		<!-- and use normal folders and paths -->
-		<!-- and are dimentions of cards are allright? -->
-		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
 		<title>Portfolio</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header  container">
@@ -18,21 +14,17 @@
 		</header>
 		<main>
 			<section class="cards  container">
-				<!-- <h2 class="section-title  visually-hidden">Mark-up examples</h2> -->
-				 <!--i guess i can delete section-title-->
-			<!-- <div class="example__wrapper"> -->
 				<h2 class="visually-hidden">Mark-up examples</h2>
 				<article class="card__container">
 					<a target="_blank" href="https://t-veyden.github.io/39616-device/">
-						<img class="card__img"
-						src="device-index.jpg" width="300" height="350" alt="">
+						<img class="card__img" src="img/device-index.jpg" width="300" height="350" alt="Device project card">
 					</a>
 		 			<div class="card__type">
 		 				<a target="_blank" href="https://t-veyden.github.io/39616-device/">
 							<b>Device</b>
 						</a>
 		 			</div>
-					<a class="repo-link" href="">github repository</a>
+					<a class="repo-link" target="_blank" href="https://github.com/t-veyden/39616-device">github repository</a>
 					<div class="hidden-card">
 						<button class="btn" type="button">
 							<span class="visually-hidden">More information</span>
@@ -49,18 +41,16 @@
 						</div>
 					</div>
 		 		</article>
-
 		 		<article class="card__container">
 					<a target="_blank" href="https://t-veyden.github.io/sedona/index.html">
-						<img class="card__img"
-						src="sedona-index.jpg" width="300" height="350" alt="">
+						<img class="card__img" src="img/sedona-index.jpg" width="300" height="350" alt="Sedona project card">
 					</a>
 		 			<div class="card__type">
 						<a target="_blank" href="https://t-veyden.github.io/sedona/index.html">
 							<b>Sedona</b>
 						</a>
 		 			</div>
-					<a class="repo-link" href="">github repository</a>
+					<a class="repo-link" target="_blank" href="https://github.com/t-veyden/39616-sedona">github repository</a>
 					<div class="hidden-card">
 						<button class="btn" type="button">
 							<span class="visually-hidden">More information</span>
@@ -78,14 +68,16 @@
 						</div>
 					</div>
 		 		</article>
-
 		 		<article class="card__container">
-					<img class="card__img"
-					src="bike-index.jpg" width="300" height="350" alt="">
+					<a target="_blank" href="https://t-veyden.github.io/bikeshop/">
+						<img class="card__img" src="img/bike-index.jpg" width="300" height="350" alt="Bikeshop roject card">
+					</a>
 		 			<div class="card__type">
-						<a href=""><b>Bikeshop</b></a>
+						<a target="_blank" href="https://t-veyden.github.io/bikeshop/">
+							<b>Bikeshop</b>
+						</a>
 		 			</div>
-					<a class="repo-link" href="">github repository</a>
+					<a class="repo-link" target="_blank" href="https://github.com/t-veyden/bicycle-landing">github repository</a>
 					<div class="hidden-card">
 						<button class="btn" type="button">
 							<span class="visually-hidden">More information</span>
@@ -93,11 +85,8 @@
 						<div class="hidden-card__info  hide">
 							<b class="hidden-card__title">About this project:</b>
 							<ul class="hidden-card__description">
-								<!-- <li><b>Design by:</b>
-									<a class="hidden-card__link" href="#">HTML Academy</a>
-								</li> -->
 								<li><b>Static</b>, landing page</li>
-								<li><b>HTML5, Sass, JS</b></li>
+								<li><b>HTML5, Sass, Gulp</b></li>
 								<li><b>BEM</b></li>
 							</ul>
 						</div>
