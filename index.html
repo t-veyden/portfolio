@@ -109,12 +109,12 @@
 		<script>
 		function animateCard() {
 			var buttons = document.querySelectorAll('.btn');
-			var hiddenCards = document.querySelectorAll('.hidden-card__info');
 
-			for (let i = 0; i < buttons.length; i++) {
+			for (var i = 0; i < buttons.length; i++) {
 				buttons[i].addEventListener('click', function(evt) {
+					var card = evt.target.nextElementSibling;
 					evt.target.classList.toggle('animate');
-					hiddenCards[i].classList.toggle('hide');
+					card.classList.toggle('hide');
 				});
 			}
 		}
